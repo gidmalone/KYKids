@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rock+Salt&display=swap');
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 :root{
-    --background-color: #f5f5f5;
+    --background-color: white;
     --font-color-alt: rgba(0,114,153,1); 
     --font-color-main:  rgba(28, 28, 28, 1);
 }
@@ -15,10 +32,6 @@ img
 {
     
 }
-nav, h1{
-    filter: brightness(100%);
-    opacity: 100%;
-}
 header {
     display: flex;
     flex-direction: column-reverse;
@@ -30,18 +43,17 @@ header {
     background-image: url("/imgs/HeartofKYWebLogo.jpg");
     background-position: center;
     background-size: contain;
-    opacity: 90%;
     margin-bottom: 40px;
-    filter: brightness(70%);
 }
 nav ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     list-style-type: none;
-    gap: 20px;
+    gap: 10px;
     font-size: 20pt;
     text-decoration: bold;
+    padding-right: 10px;
 }
 aside{
     display: flex;
@@ -56,7 +68,7 @@ aside img{
 header>h1{
     align-self: center;
     font-size: 40pt;
-    font-family: cursive;
+    font-family: Rock Salt;
     
 }
 a .logo{
@@ -90,7 +102,10 @@ main section h2{
     color: var(--font-color-alt);
     font-size: 20pt;
 }
-
+#preschool h2{
+    font-size: 32px;
+    padding-bottom: 15px;
+}
 img[alt = "First Steps Logo"]{
     height: 290;
     width: 334;
@@ -98,6 +113,7 @@ img[alt = "First Steps Logo"]{
 img[alt = "School Logo"]{
     height: 290;
     width: 334;
+    padding-bottom: 52px;
 }
 main section p{
     color: rgba(28, 28, 28, 1);
@@ -141,9 +157,60 @@ address{
     display: flex;
     flex-direction: row;
     gap: 50px;
+    
 }
 
 #age03, #age36{
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+.imgwrapper p{
+    font-size: 19px;
+}
+a .phone{
+    text-decoration: none;
+    color: var(--font-color-main);
+}
+#age36 ul{
+    list-style-type: none;
+}
+#AddressConcerns>h2{
+    display: block;
+    padding-bottom: 30px;
+    width: 100%;
+    border-bottom: 2px solid lightgrey;
+}
+#PublicPreschool img{
+    padding-top: 30px;
+    width: 200px;
+}
+#PrivatePreschool img{
+    padding-top: 10px;
+    width: 200px;
+}
+#preschool ul{
+    list-style-type: none;
+    text-align: center;
+    text-indent: 0;
+    width: auto;
+}
+#preschool .phone{
+    text-align: right;
+}
+.phone{
+    color: var(--font-color-main);
+    text-decoration: none;
+}
+#headStartPre{
+display: flex;
+flex-direction: row;
+gap: 60px;
+padding-right: 30%;
+}
+#headStartPre p, a{
+    text-align: center;
+}
+#headStartPre img{
+    width:300px;
 }
