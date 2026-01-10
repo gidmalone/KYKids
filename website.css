@@ -1,20 +1,23 @@
 :root{
     --background-color: #f5f5f5;
     --font-color-alt: rgba(0,114,153,1); 
-    --font-color-main: darkgrey;
+    --font-color-main:  rgba(28, 28, 28, 1);
 }
 body{
     background-color: var(--background-color);
+    font-family: PT Sans,  Helvetica, sans-serif;
+    line-height: 28px;
 }
 h3{
     color: var(--font-color-alt)
 }
 img
 {
-    border:1px solid black; 
-}
-nav{
     
+}
+nav, h1{
+    filter: brightness(100%);
+    opacity: 100%;
 }
 header {
     display: flex;
@@ -24,21 +27,31 @@ header {
     width: 100%;
     height: 500px;
     color: white;
-    background-color: pink;
     background-image: url("/imgs/HeartofKYWebLogo.jpg");
+    background-position: center;
+    background-size: contain;
+    opacity: 90%;
+    margin-bottom: 40px;
+    filter: brightness(70%);
 }
-ul{
+nav ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    color: white;
     list-style-type: none;
     gap: 20px;
     font-size: 20pt;
     text-decoration: bold;
 }
-li>ul{
-    
+aside{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+aside img{
+    width: 65px;
+    box-sizing: border-box;
+    border-radius: 150px;
 }
 header>h1{
     align-self: center;
@@ -49,7 +62,88 @@ header>h1{
 a .logo{
     display:none;
 }
-a{
+ nav li a{
     color: white;
     text-decoration: none;
+}
+img[alt = "Facebook"]{
+    background: linear-gradient(to top right, #1877f2 , darkblue );
+} 
+img[alt = "Instagram"]{
+background: linear-gradient(to bottom right, #833AB4, #fd1d1d, #fcb045);
+}
+#inspiration{
+    color: var(--font-color-alt);
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    font-size: 30pt;
+    line-height: normal;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0% 20% 0% 20%;
+}
+main section h2{
+    color: var(--font-color-alt);
+    font-size: 20pt;
+}
+
+img[alt = "First Steps Logo"]{
+    height: 290;
+    width: 334;
+}
+img[alt = "School Logo"]{
+    height: 290;
+    width: 334;
+}
+main section p{
+    color: rgba(28, 28, 28, 1);
+}
+p:has(a[href="https://www.letslearnky.org/#kindergarten-readiness"]){
+    color: var(--font-color-alt);
+    font-weight: 600;
+    font-size: 14pt;
+
+}
+p a[href="https://www.letslearnky.org/#kindergarten-readiness"]{
+    color: var(--font-color-alt);
+    font-weight: 600;
+    font-size: 14pt;
+
+}
+a{
+    color: var(--font-color-alt)
+}
+address + p{
+    font-weight: 800;
+}
+address + p + p{
+    font-weight: 800;
+}
+#allDonation, #dollyDonation{
+    display: inline;
+    font-weight: 400;
+    font-size: 19px;
+    color: var(--font-color-main)
+}
+address{
+    padding-bottom: 0;
+    font-weight: 400;
+    font-size: 19px;
+    color: var(--font-color-main);
+    font-style: normal;
+}
+
+.imgwrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+#age03, #age36{
+    display: flex;
+    flex-direction: column;
 }
