@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rock+Salt&display=swap');
-.rock-salt-regular {
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');.rock-salt-regular {
   font-family: "Rock Salt", cursive;
   font-weight: 400;
   font-style: normal;
@@ -16,6 +15,14 @@ p{
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+h1*, h2*{
+    font-family: "Raleway";
 }
 :root{
     --background-color: white;
@@ -58,10 +65,13 @@ nav ul{
     text-decoration: bold;
     padding-right: 10px;
 }
-aside{
+#home aside{
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+aside{
+    display: none;
 }
 aside img{
     width: 65px;
@@ -126,13 +136,7 @@ p:has(a[href="https://www.letslearnky.org/#kindergarten-readiness"]){
     color: var(--font-color-alt);
     font-weight: 600;
     font-size: 14pt;
-
-}
-p a[href="https://www.letslearnky.org/#kindergarten-readiness"]{
-    color: var(--font-color-alt);
-    font-weight: 600;
-    font-size: 14pt;
-
+    text-align: center;
 }
 a{
     color: var(--font-color-alt)
@@ -253,4 +257,61 @@ img[alt = "childcare referal site"], img[alt = "childcare benefits site"]{
     padding-left: 0px;
     list-style-position: inside;
     text-align: left;
+}
+#programs .imgwrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+#programs img{
+    height: 485px; 
+}
+iframe[src="https://www.youtube.com/embed/HVb7yfI0HT4"]{
+    width: 464px;
+    height: 315px;
+    align-self: center;
+}
+#programs h2{
+    display: block;
+    color: var(--font-color-alt);
+    font-size: 27px;
+    text-align: center;
+}
+#dolly{
+    display: flex;
+    flex-direction: column;
+}
+#programs ul li a{
+    background-color: var(--font-color-alt);
+    color: white;
+    padding: 5px 70px 5px 70px;
+    font-size: 19px;
+    border-radius: 5%;
+    text-decoration: none;
+}
+#programs ul li {
+    padding: 10px;
+    width: 500px;
+}
+#programs ul
+{
+    list-style-type: none;
+    gap: 10px;
+}
+div.note{
+    font-size: 27px;
+    font-weight: 600;
+    color: var(--font-color-alt);
+    text-align: center;
+}
+#AtHome{
+    display:none;
+}
+#kids-and-parents{
+    display: flex;
+    flex-direction: row;
+}
+#kids-and-parents img{
+    width: 266px;
+    height: 266px;
 }
