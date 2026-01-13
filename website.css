@@ -271,11 +271,10 @@ iframe[src="https://www.youtube.com/embed/HVb7yfI0HT4"]{
     height: 315px;
     align-self: center;
 }
-#programs h2{
+#activities h2{
     display: block;
     color: var(--font-color-alt);
     font-size: 27px;
-    text-align: center;
 }
 #dolly{
     display: flex;
@@ -307,11 +306,112 @@ div.note{
 #AtHome{
     display:none;
 }
-#kids-and-parents{
+#kids-and-parents div.imgwrapper{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 #kids-and-parents img{
     width: 266px;
     height: 266px;
+}
+#kids-and-parents div.imgwrapper div{
+    width: 33%;
+    text-align: center;
+    line-height: normal;
+}
+#kids-and-parents div.imgwrapper div ul{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 0px;
+    list-style-position: inside;
+    text-align: center;
+}
+
+#kidAdventues div.imgwrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#kidAdventues img{
+    width: 266px;
+    height: 266px;
+}
+#kidAdventues div.imgwrapper div{
+    width: 50%;
+    text-align: center;
+    line-height: normal;
+}
+#kidAdventues div.imgwrapper div ul{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 0px;
+    list-style-position: inside;
+    text-align: center;
+}
+
+#newParents div.imgwrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#newParents img{
+    width: 266px;
+    height: 266px;
+}
+#newParents div.imgwrapper div{
+    width: 33%;
+    text-align: center;
+    line-height: normal;
+}
+#newParents div.imgwrapper div ul{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 0px;
+    list-style-position: inside;
+    text-align: center;
+}
+
+#theraphy div.imgwrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#theraphy img{
+    width: 266px;
+    height: 266px;
+}
+#theraphy div.imgwrapper div{
+    width: 33%;
+    text-align: center;
+    line-height: normal;
+}
+#theraphy div.imgwrapper div ul{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 0px;
+    list-style-position: inside;
+    text-align: center;
+}
+
+#caregivers div.imgwrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#caregivers img{
+    width: 266px;
+    height: 266px;
+}
+#caregivers div.imgwrapper div{
+    width: 33%;
+    text-align: center;
+    line-height: normal;
+}
+#caregivers div.imgwrapper div ul{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 0px;
+    list-style-position: inside;
+    text-align: center;
 }
