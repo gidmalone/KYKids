@@ -1,29 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');.rock-salt-regular {
-  font-family: "Rock Salt", cursive;
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Love+Ya+Like+A+Sister&family=Short+Stack&display=swap');
+.coming-soon-regular {
+  font-family: "Coming Soon", cursive;
   font-weight: 400;
   font-style: normal;
 }
-.pt-sans-regular {
-  font-family: "PT Sans", sans-serif;
+.short-stack-regular {
+  font-family: "Short Stack", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.love-ya-like-a-sister-regular {
+  font-family: "Love Ya Like A Sister", cursive;
   font-weight: 400;
   font-style: normal;
 }
 p{
-    font-size: 19px;
+    font-size: 24px !important;
     color: var(--font-color-main) !important;
+    font-family: "Coming Soon";
 }
-.pt-sans-bold {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-.raleway {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-h1*, h2*{
-    font-family: "Raleway";
+ul{
+    font-size: 24px !important;
+    color: var(--font-color-main) !important;
+    font-family: "Coming Soon";
 }
 :root{
     --background-color: white;
@@ -32,21 +31,16 @@ h1*, h2*{
 }
 body{
     background-color: var(--background-color);
-    font-family: PT Sans,  Helvetica, sans-serif;
+    font-family: "Short Stack";
     line-height: 28px;
 }
-h3{
-    color: var(--font-color-alt)
-}
-img
-{
-    
-}
 header {
+    position: fixed;
+    width: 100%;
     display:flex;
     flex-direction: column;
     margin-bottom: 50px;
-    background-image: linear-gradient(to right, #F5D55B 75%, #F59E35);
+    background-image: linear-gradient(to right, #F5D55B 65%, #F59E35);
 }
 header h1{
     color: white;
@@ -56,15 +50,16 @@ nav ul{
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
-    gap: 15px;
-    font-size: 20pt;
+    gap: 30px;
     text-decoration: bold;
     padding-right: 10px;
+    font-family: "Love Ya Like A Sister";
 }
 #home aside{
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding-top: 200px;
 }
 aside{
     display: none;
@@ -78,7 +73,7 @@ aside img{
 header>h1{
     align-self: center;
     font-size: 40pt;
-    font-family: Rock Salt;
+    font-family: "Love Ya Like A Sister";
     
 }
 a .logo{
@@ -107,15 +102,10 @@ main{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 0% 10% 0% 10%;
+    padding: 200px 10% 0% 10%;
 }
-main section h2{
-    color: var(--font-color-alt);
-    font-size: 20pt;
-}
-#preschool h2{
-    font-size: 32px;
-    padding-bottom: 15px;
+#home main{
+    padding-top: 0px;
 }
 img[alt = "First Steps Logo"]{
     height: 290;
@@ -187,7 +177,9 @@ h2{
     display: block;
     padding-bottom: 30px;
     width: 100%;
+    color: var(--font-color-alt);
     border-bottom: 2px solid #F5D55B;
+    font-size: 40px;
 }
 #PublicPreschool img{
     padding-top: 30px;
@@ -247,13 +239,8 @@ img[alt = "what to look for in childcare"]{
 img[alt = "childcare referal site"], img[alt = "childcare benefits site"]{
     height: 200px;
 }
-#childcare h2{
-    color: var(--font-color-alt);
-    font-size: 27px;
-}
 #childcare main ul{
     list-style: none;
-    font-size: 19px;
     padding-left: 0px;
     list-style-position: inside;
     text-align: left;
@@ -271,11 +258,6 @@ iframe[src="https://www.youtube.com/embed/HVb7yfI0HT4"]{
     height: 315px;
     align-self: center;
 }
-#activities h2{
-    display: block;
-    color: var(--font-color-alt);
-    font-size: 27px;
-}
 #dolly{
     display: flex;
     flex-direction: column;
@@ -284,7 +266,6 @@ iframe[src="https://www.youtube.com/embed/HVb7yfI0HT4"]{
     background-color: var(--font-color-alt);
     color: white;
     padding: 5px 70px 5px 70px;
-    font-size: 19px;
     border-radius: 5%;
     text-decoration: none;
 }
@@ -322,7 +303,6 @@ div.note{
 }
 #kids-and-parents div.imgwrapper div ul{
     list-style: none;
-    font-size: 19px;
     padding-left: 0px;
     list-style-position: inside;
     text-align: center;
@@ -366,7 +346,6 @@ div.note{
 }
 #newParents div.imgwrapper div ul{
     list-style: none;
-    font-size: 19px;
     padding-left: 0px;
     list-style-position: inside;
     text-align: center;
@@ -388,7 +367,6 @@ div.note{
 }
 #theraphy div.imgwrapper div ul{
     list-style: none;
-    font-size: 19px;
     padding-left: 0px;
     list-style-position: inside;
     text-align: center;
@@ -410,7 +388,6 @@ div.note{
 }
 #caregivers div.imgwrapper div ul{
     list-style: none;
-    font-size: 19px;
     padding-left: 0px;
     list-style-position: inside;
     text-align: center;
