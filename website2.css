@@ -44,6 +44,7 @@ header {
 }
 header h1{
     color: white;
+    font-size:75px !important;
 }
 nav ul{
     display: flex;
@@ -54,12 +55,22 @@ nav ul{
     text-decoration: bold;
     padding-right: 10px;
     font-family: "Love Ya Like A Sister";
+    font-size: 35px !important;
 }
 #home aside{
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding-top: 200px;
+    padding-top: 225px;
+}
+h1.title::before{
+    content: "";
+    background-image: url("sunrise-coloring-page-transparent.png");
+}
+h1.title::after{
+    content: "";
+    position: fixed;
+    background-image: url("simple-blue-heart.png");
 }
 aside{
     display: none;
@@ -93,7 +104,7 @@ background: linear-gradient(to bottom right, #833AB4, #fd1d1d, #fcb045);
     color: var(--font-color-alt) !important;
     text-align: center;
     padding: 0px 20px 0px 20px;
-    font-size: 32px;
+    font-size: 35px !important;
     font-weight: 600;
     line-height: normal;
 }
@@ -102,7 +113,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 200px 10% 0% 10%;
+    padding: 250px 10% 0% 10%;
 }
 #home main{
     padding-top: 0px;
