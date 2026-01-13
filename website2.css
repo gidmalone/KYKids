@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p{
+    font-size: 19px;
+    color: var(--font-color-main) !important;
+}
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+h1*, h2*{
+    font-family: "Raleway";
+}
+:root{
+    --background-color: white;
+    --font-color-alt: #F54362; 
+    --font-color-main:  #36454F;
+}
+body{
+    background-color: var(--background-color);
+    font-family: PT Sans,  Helvetica, sans-serif;
+    line-height: 28px;
+}
+h3{
+    color: var(--font-color-alt)
+}
+img
+{
+    
+}
+header {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to right, #F5D55B 75%, #F59E35);
+}
+header h1{
+    color: white;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    gap: 15px;
+    font-size: 20pt;
+    text-decoration: bold;
+    padding-right: 10px;
+}
+#home aside{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+aside{
+    display: none;
+}
+aside img{
+    width: 100px;
+    box-sizing: border-box;
+    border-radius: 150px;
+    margin: 30px;
+}
+header>h1{
+    align-self: center;
+    font-size: 40pt;
+    font-family: Rock Salt;
+    
+}
+a .logo{
+    display:none;
+}
+ nav li a{
+    color: white;
+    text-decoration: none;
+}
+img[alt = "Facebook"]{
+    background: linear-gradient(to top right, #1877f2 , darkblue );
+} 
+img[alt = "Instagram"]{
+background: linear-gradient(to bottom right, #833AB4, #fd1d1d, #fcb045);
+}
+#inspiration p{
+    color: var(--font-color-alt) !important;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0% 10% 0% 10%;
+}
+main section h2{
+    color: var(--font-color-alt);
+    font-size: 20pt;
+}
+#preschool h2{
+    font-size: 32px;
+    padding-bottom: 15px;
+}
+img[alt = "First Steps Logo"]{
+    height: 290;
+    width: 334;
+}
+img[alt = "School Logo"]{
+    height: 290;
+    width: 334;
+    padding-bottom: 52px;
+}
+p:has(a[href="https://www.letslearnky.org/#kindergarten-readiness"]){
+    color: var(--font-color-alt);
+    font-weight: 600;
+    font-size: 14pt;
+    text-align: center;
+}
+a{
+    color: var(--font-color-alt)
+}
+address + p{
+    font-weight: 800;
+}
+address + p + p{
+    font-weight: 800;
+}
+#allDonation, #dollyDonation{
+    display: inline;
+    font-weight: 400;
+    font-size: 19px;
+    color: var(--font-color-main)
+}
+address{
+    padding-bottom: 0;
+    font-weight: 400;
+    font-size: 19px;
+    color: var(--font-color-main);
+    font-style: normal;
+}
+
+#preschool .imgwrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    
+}
+
+#age03, #age36{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.imgwrapper p{
+    font-size: 19px;
+}
+a .phone{
+    text-decoration: none;
+    color: var(--font-color-main);
+}
+#age36 ul{
+    list-style-type: none;
+}
+#AddressConcerns>h2{
+    display: block;
+    padding-bottom: 30px;
+    width: 100%;
+    border-bottom: 2px solid F5D55B;
+}
+h2{
+    display: block;
+    padding-bottom: 30px;
+    width: 100%;
+    border-bottom: 2px solid #F5D55B;
+}
+#PublicPreschool img{
+    padding-top: 30px;
+    width: 200px;
+}
+#PrivatePreschool img{
+    padding-top: 10px;
+    width: 200px;
+}
+#preschool ul{
+    list-style-type: none;
+    text-align: center;
+    text-indent: 0;
+    width: auto;
+}
+#preschool .phone{
+    text-align: right;
+}
+.phone{
+    color: var(--font-color-main);
+    text-decoration: none;
+}
+#headStartPre{
+display: flex;
+flex-direction: row;
+gap: 60px;
+padding-right: 30%;
+}
+#headStartPre p, a{
+    text-align: center;
+}
+#headStartPre img{
+    width:300px;
+}
+img[alt = "what to look for in childcare"]{
+    display: none;
+}
+#childcare .imgwrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+#whyChildcare{
+    order: -3;
+}
+#choseChildcare, #childcareBenefits{
+    display:flex;
+    flex-direction: row;
+    gap: 60px;
+}
+#choseChildcare{
+    order: 0;
+}
+#childcareBenefits{
+    order: -2;
+}
+img[alt = "childcare referal site"], img[alt = "childcare benefits site"]{
+    height: 200px;
+}
+#childcare h2{
+    color: var(--font-color-alt);
+    font-size: 27px;
+}
+#childcare main ul{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 0px;
+    list-style-position: inside;
+    text-align: left;
+}
+#programs .imgwrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+#programs img{
+    height: 485px; 
+}
+iframe[src="https://www.youtube.com/embed/HVb7yfI0HT4"]{
+    width: 464px;
+    height: 315px;
+    align-self: center;
+}
+#activities h2{
+    display: block;
+    color: var(--font-color-alt);
+    font-size: 27px;
+}
+#dolly{
+    display: flex;
+    flex-direction: column;
+}
+#programs ul li a{
+    background-color: var(--font-color-alt);
+    color: white;
+    padding: 5px 70px 5px 70px;
+    font-size: 19px;
+    border-radius: 5%;
+    text-decoration: none;
+}
+#programs ul li {
+    padding: 10px;
+    width: 500px;
+}
+#programs ul
+{
+    list-style-type: none;
+    gap: 10px;
+}
+div.note{
+    font-size: 27px;
+    font-weight: 600;
+    color: var(--font-color-alt);
+    text-align: center;
+}
+#AtHome{
+    display:none;
+}
+#kids-and-parents div.imgwrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#kids-and-parents img{
+    width: 266px;
+    height: 266px;
+}
+#kids-and-parents div.imgwrapper div{
+    width: 33%;
+    text-align: center;
+    line-height: normal;
+}
+#kids-and-parents div.imgwrapper div ul{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 0px;
+    list-style-position: inside;
+    text-align: center;
+}
+
+#kidAdventues div.imgwrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#kidAdventues img{
+    width: 266px;
+    height: 266px;
+}
+#kidAdventues div.imgwrapper div{
+    width: 50%;
+    text-align: center;
+    line-height: normal;
+}
+#kidAdventues div.imgwrapper div ul{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 0px;
+    list-style-position: inside;
+    text-align: center;
+}
+
+#newParents div.imgwrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#newParents img{
+    width: 266px;
+    height: 266px;
+}
+#newParents div.imgwrapper div{
+    width: 33%;
+    text-align: center;
+    line-height: normal;
+}
+#newParents div.imgwrapper div ul{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 0px;
+    list-style-position: inside;
+    text-align: center;
+}
+
+#theraphy div.imgwrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#theraphy img{
+    width: 266px;
+    height: 266px;
+}
+#theraphy div.imgwrapper div{
+    width: 33%;
+    text-align: center;
+    line-height: normal;
+}
+#theraphy div.imgwrapper div ul{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 0px;
+    list-style-position: inside;
+    text-align: center;
+}
+
+#caregivers div.imgwrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#caregivers img{
+    width: 266px;
+    height: 266px;
+}
+#caregivers div.imgwrapper div{
+    width: 33%;
+    text-align: center;
+    line-height: normal;
+}
+#caregivers div.imgwrapper div ul{
+    list-style: none;
+    font-size: 19px;
+    padding-left: 0px;
+    list-style-position: inside;
+    text-align: center;
+}

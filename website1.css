@@ -92,10 +92,10 @@ a .logo{
     text-decoration: none;
 }
 img[alt = "Facebook"]{
-    background: linear-gradient(to top right, #1877f2 , darkblue );
+    background: rgb(52, 103, 241);
 } 
 img[alt = "Instagram"]{
-background: linear-gradient(to bottom right, #833AB4, #fd1d1d, #fcb045);
+background: #FA2A55;
 }
 #inspiration p{
     color: var(--font-color-alt);
