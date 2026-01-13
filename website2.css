@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Love+Ya+Like+A+Sister&family=Short+Stack&display=swap');
-.coming-soon-regular {
-  font-family: "Coming Soon", cursive;
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Love+Ya+Like+A+Sister&family=Short+Stack&display=swap');
+.happy-monkey-regular {
+  font-family: "Happy Monkey", system-ui;
   font-weight: 400;
   font-style: normal;
 }
@@ -17,16 +17,16 @@
 p{
     font-size: 24px !important;
     color: var(--font-color-main) !important;
-    font-family: "Coming Soon";
+    font-family: "Happy Monkey";
 }
 ul{
-    font-size: 24px !important;
+    font-size: 24px ;
     color: var(--font-color-main) !important;
-    font-family: "Coming Soon";
+    font-family: "Happy Monkey";
 }
 :root{
     --background-color: white;
-    --font-color-alt: #F54362; 
+    --font-color-alt: #EB591E; 
     --font-color-main:  #36454F;
 }
 body{
@@ -36,41 +36,65 @@ body{
 }
 header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     display:flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-    background-image: linear-gradient(to right, #F5D55B 65%, #F59E35);
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+    background-image: linear-gradient(to right, #F5D55B 50%, #F59E35);
 }
 header h1{
     color: white;
+    display: inline;
     font-size:75px !important;
+    flex-grow: 1;
+    padding-left: 50px;
+}
+a[href="https://newvista.org/developmental/keis-birth-to-age-3"] h2{
+    border-bottom: 0px;
 }
 nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     list-style-type: none;
-    gap: 30px;
+    gap: 25px;
     text-decoration: bold;
-    padding-right: 10px;
     font-family: "Love Ya Like A Sister";
-    font-size: 35px !important;
+    font-size: 43px !important;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+h1.title::before{
+    content: "";
+    background-image: url(/imgs/sunrise-lines.png);
+    display: inline-block;
+    width: 150px;
+    height: 125px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+h1.title::after{
+    content: "";
+    background-image: url(/imgs/simple-blue-heart.png);
+    display: inline-block;
+    width: 150px;
+    height: 125px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-left: 10px;
 }
 #home aside{
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding-top: 225px;
-}
-h1.title::before{
-    content: "";
-    background-image: url("sunrise-coloring-page-transparent.png");
-}
-h1.title::after{
-    content: "";
-    position: fixed;
-    background-image: url("simple-blue-heart.png");
+    padding-top: 200px;
 }
 aside{
     display: none;
@@ -82,7 +106,7 @@ aside img{
     margin: 30px;
 }
 header>h1{
-    align-self: center;
+    align-self:flex-end;
     font-size: 40pt;
     font-family: "Love Ya Like A Sister";
     
@@ -101,19 +125,50 @@ img[alt = "Instagram"]{
 background: linear-gradient(to bottom right, #833AB4, #fd1d1d, #fcb045);
 }
 #inspiration p{
+    display: block;
+    width: 1200px;
+    position: relative;
+    left: 350px;
     color: var(--font-color-alt) !important;
     text-align: center;
-    padding: 0px 20px 0px 20px;
-    font-size: 35px !important;
+    padding-right: 100px;
+    font-size: 50px !important;
     font-weight: 600;
     line-height: normal;
 }
-
+#inspiration::before{
+    content: "";
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    background-image: url(/imgs/happy-sun.png);
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#inspiration::after{
+    content: "";
+    position: absolute;
+    top: 400px;
+    left: 1950px;
+    background-image: url(/imgs/happy-sun.png);
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 main{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 250px 10% 0% 10%;
+    padding: 225px 10% 0% 10%;
 }
 #home main{
     padding-top: 0px;
@@ -230,7 +285,8 @@ img[alt = "what to look for in childcare"]{
 }
 #childcare .imgwrapper{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
     gap: 50px;
 }
 #whyChildcare{
@@ -238,14 +294,18 @@ img[alt = "what to look for in childcare"]{
 }
 #choseChildcare, #childcareBenefits{
     display:flex;
-    flex-direction: row;
-    gap: 60px;
+    flex-direction: column;
+    width: 920px;
 }
+
 #choseChildcare{
     order: 0;
 }
 #childcareBenefits{
     order: -2;
+}
+#whyChildcare div {
+    width: 1900px;
 }
 img[alt = "childcare referal site"], img[alt = "childcare benefits site"]{
     height: 200px;

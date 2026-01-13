@@ -164,6 +164,11 @@ address{
 #preschool .imgwrapper{
     display: flex;
     flex-direction: row;
+    gap: 50px;  
+}
+#concerns .imgwrapper{
+    display: flex;
+    flex-direction: row;
     gap: 50px;
     
 }
