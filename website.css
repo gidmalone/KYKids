@@ -42,8 +42,10 @@ header {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
+    position: relative;
+    left: -9px;
     gap: 100px;
-    width: 100%;
+    width: 1897px;
     height: 500px;
     color: white;
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/imgs/HeartofKYWebLogo.jpg");
@@ -57,10 +59,17 @@ nav ul{
     flex-direction: row;
     justify-content: flex-end;
     list-style-type: none;
+    position:fixed;
+    top: -30px;
+    right:9px;
+    width: 100% !important;
+    padding-bottom: 15px;
+    padding-top: 15px;
     gap: 15px;
     font-size: 20pt;
     text-decoration: bold;
     padding-right: 10px;
+    background-color: black;
 }
 #home aside{
     display: flex;
