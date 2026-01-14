@@ -1,93 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');.rock-salt-regular {
-  font-family: "Rock Salt", cursive;
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Love+Ya+Like+A+Sister&family=Short+Stack&display=swap');
+.happy-monkey-regular {
+  font-family: "Happy Monkey", system-ui;
   font-weight: 400;
   font-style: normal;
 }
-.pt-sans-regular {
-  font-family: "PT Sans", sans-serif;
+.short-stack-regular {
+  font-family: "Short Stack", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.love-ya-like-a-sister-regular {
+  font-family: "Love Ya Like A Sister", cursive;
   font-weight: 400;
   font-style: normal;
 }
 p{
-    font-size: 19px;
+    font-size: 24px !important;
+    color: var(--font-color-main) !important;
+    font-family: "Happy Monkey";
 }
-.pt-sans-bold {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-.raleway {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-h1*, h2*{
-    font-family: "Raleway";
+ul{
+    font-size: 24px ;
+    color: var(--font-color-main) !important;
+    font-family: "Happy Monkey";
 }
 :root{
     --background-color: white;
-    --font-color-alt: rgba(0,114,153,1); 
-    --font-color-main:  rgba(28, 28, 28, 1);
+    --font-color-alt: #EB7E25; 
+    --font-color-main:  #36454F;
 }
 body{
     background-color: var(--background-color);
-    font-family: PT Sans,  Helvetica, sans-serif;
+    font-family: "Short Stack";
     line-height: 28px;
 }
-h3{
-    color: var(--font-color-alt)
-}
-
 header {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    position: relative;
-    left: -9px;
-    gap: 100px;
-    width: 1897px;
-    height: 500px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+    background-image: linear-gradient(to right, #F5D55B 50%, #F59E35);
+}
+header h1{
     color: white;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/imgs/HeartofKYWebLogo.jpg");
-    padding: 0px;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
+    display: inline;
+    font-size:75px !important;
+    flex-grow: 1;
+    padding-left: 0px;
+}
+a[href="https://newvista.org/developmental/keis-birth-to-age-3"] h2{
+    border-bottom: 0px;
 }
 nav ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     list-style-type: none;
-    position:fixed;
-    top: -30px;
-    right:9px;
-    width: 100% !important;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    gap: 15px;
-    font-size: 20pt;
+    gap: 10px;
     text-decoration: bold;
-    padding-right: 10px;
-    background-color: black;
+    font-family: "Love Ya Like A Sister";
+    font-size: 43px !important;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+h1.title::before{
+    content: "";
+    background-image: url(/imgs/sunrise-lines.png);
+    /* https://www.supercoloring.com/media/coloring/2128140/sunrise */
+    display: inline-block;
+    width: 150px;
+    height: 125px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 #home aside{
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding-top: 200px;
 }
 aside{
     display: none;
 }
 aside img{
-    width: 65px;
+    width: 100px;
     box-sizing: border-box;
     border-radius: 150px;
+    margin: 30px;
 }
 header>h1{
-    align-self: center;
+    align-self:flex-end;
     font-size: 40pt;
-    font-family: Rock Salt;
+    font-family: "Love Ya Like A Sister";
     
 }
 a .logo{
@@ -98,33 +109,69 @@ a .logo{
     text-decoration: none;
 }
 img[alt = "Facebook"]{
-    background: rgb(52, 103, 241);
+    background: linear-gradient(to top right, #1877f2 , darkblue );
 } 
 img[alt = "Instagram"]{
-background: #FA2A55;
+background: linear-gradient(to bottom right, #833AB4, #fd1d1d, #fcb045);
 }
 #inspiration p{
-    color: var(--font-color-alt);
+    z-index: -10;
+    display: block;
+    width: 1200px;
+    position: relative;
+    left: 350px;
+    color: var(--font-color-alt) !important;
     text-align: center;
-    padding: 0px 20px 0px 20px;
-    font-size: 32px;
+    padding-right: 100px;
+    font-size: 50px !important;
     font-weight: 600;
     line-height: normal;
 }
-
+#inspiration::before{
+    z-index: -10;
+    content: "";
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    background-image: url(/imgs/happy-sun.png);
+    /* https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.clipartmax.com%2Fmiddle%2Fm2i8H7G6d3b1m2K9_image-sun-drawing%2F&data=05%7C02%7Cgid.malone%40centre.edu%7Ceb369a8d59bc4129ce0508de52e33ef7%7C2d0403c2f6ac4237b4b590a8d2ecf8f2%7C0%7C0%7C639039333131655646%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3hpSWVeIIvnXH6Jqm7SSW%2BCeB7JogMi5%2FigqsJMR6sE%3D&reserved=0 */
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#inspiration::after{
+    z-index: -10;
+    content: "";
+    position: absolute;
+    top: 400px;
+    left: 1950px;
+    background-image: url(/imgs/happy-sun.png);
+    /* https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.clipartmax.com%2Fmiddle%2Fm2i8H7G6d3b1m2K9_image-sun-drawing%2F&data=05%7C02%7Cgid.malone%40centre.edu%7Ceb369a8d59bc4129ce0508de52e33ef7%7C2d0403c2f6ac4237b4b590a8d2ecf8f2%7C0%7C0%7C639039333131655646%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=3hpSWVeIIvnXH6Jqm7SSW%2BCeB7JogMi5%2FigqsJMR6sE%3D&reserved=0 */
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 main{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 0% 20% 0% 20%;
+    padding: 225px 10% 0% 10%;
 }
-main section h2{
-    color: var(--font-color-alt);
-    font-size: 20pt;
-}
-#preschool h2{
-    font-size: 32px;
-    padding-bottom: 15px;
+#home main{
+    padding-top: 0px;
 }
 img[alt = "First Steps Logo"]{
     height: 290;
@@ -134,9 +181,6 @@ img[alt = "School Logo"]{
     height: 290;
     width: 334;
     padding-bottom: 52px;
-}
-main section p{
-    color: rgba(28, 28, 28, 1);
 }
 p:has(a[href="https://www.letslearnky.org/#kindergarten-readiness"]){
     color: var(--font-color-alt);
@@ -170,14 +214,11 @@ address{
 #preschool .imgwrapper{
     display: flex;
     flex-direction: row;
-    gap: 50px;  
-}
-#concerns .imgwrapper{
-    display: flex;
-    flex-direction: row;
     gap: 50px;
     
 }
+
+
 
 #age03, #age36{
     display: flex;
@@ -198,7 +239,17 @@ a .phone{
     display: block;
     padding-bottom: 30px;
     width: 100%;
-    border-bottom: 2px solid lightgrey;
+    border-bottom: 2px solid #F5D55B;
+}
+h2{
+    display: block;
+    padding-bottom: 30px;
+    width: 100%;
+    color: var(--font-color-alt);
+    border-bottom: 2px solid #F5D55B;
+    font-size: 40px;
+    line-height: 45px;
+    z-index: -1000;
 }
 #PublicPreschool img{
     padding-top: 30px;
@@ -224,47 +275,76 @@ a .phone{
 #headStartPre{
 display: flex;
 flex-direction: row;
-gap: 60px;
-padding-right: 30%;
+justify-content: center;
+width: 100%;
+gap: 100px;
 }
-#headStartPre p, a{
+
+#headStartPre::after{
+    content: "";
+    background-image: url(/imgs/sun-blackboard.jpg);
+    /* https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.needpix.com%2Fphoto%2F85469%2Fboard-blackboard-structure-paneling-sun-laugh-smile-happy-clown&data=05%7C02%7Cgid.malone%40centre.edu%7Ceb369a8d59bc4129ce0508de52e33ef7%7C2d0403c2f6ac4237b4b590a8d2ecf8f2%7C0%7C0%7C639039333131704299%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=KjtOCAMgWsj%2FLkm7wOvl2oAgyFsCVWU3VcwQtMkDbbA%3D&reserved=0 */
+    width: 350px;
+    height: 270px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+
+
+
+
+#headStartPre p, a, img{
     text-align: center;
+    
 }
+
+
+
+
 #headStartPre img{
     width:300px;
 }
+
+#HeadstartSection .imgwrapper{
+    display:flex;
+    flex-direction: column;
+
+}
+
 img[alt = "what to look for in childcare"]{
     display: none;
 }
 #childcare .imgwrapper{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
     gap: 50px;
 }
 #whyChildcare{
-    order: -3;
+    order: -50;
 }
 #choseChildcare, #childcareBenefits{
     display:flex;
-    flex-direction: row;
-    gap: 60px;
+    flex-direction: column;
+    width: 920px;
 }
+
 #choseChildcare{
     order: 0;
 }
 #childcareBenefits{
     order: -2;
 }
+#whyChildcare div {
+    width: 1900px;
+}
 img[alt = "childcare referal site"], img[alt = "childcare benefits site"]{
     height: 200px;
 }
-#childcare h2{
-    color: var(--font-color-alt);
-    font-size: 27px;
-}
 #childcare main ul{
     list-style: none;
-    font-size: 19px;
     padding-left: 0px;
     list-style-position: inside;
     text-align: left;
@@ -275,27 +355,22 @@ img[alt = "childcare referal site"], img[alt = "childcare benefits site"]{
     gap: 200px;
 }
 #programs img{
-    height: 485px; 
+    height: 200px;
+    margin-right: 50px; 
 }
 iframe[src="https://www.youtube.com/embed/HVb7yfI0HT4"]{
     width: 464px;
     height: 315px;
     align-self: center;
 }
-#activities h2{
-    display: block;
-    color: var(--font-color-alt);
-    font-size: 27px;
-}
 #dolly{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 #programs ul li a{
     background-color: var(--font-color-alt);
     color: white;
     padding: 5px 70px 5px 70px;
-    font-size: 19px;
     border-radius: 5%;
     text-decoration: none;
 }
@@ -308,6 +383,46 @@ iframe[src="https://www.youtube.com/embed/HVb7yfI0HT4"]{
     list-style-type: none;
     gap: 10px;
 }
+
+#ready4k{
+    display: flex;
+    flex-direction: row;
+}
+
+#ready4k h2, #dolly h2{
+    margin-bottom: 120px;
+    border: 0px;
+    position:relative;
+    bottom: -40px;
+    left: -30px;
+}
+
+#programs > h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#programs > h2::after{
+    content: "";
+    background: url(/imgs/dual-tone-sun.png);
+    /* https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.publicdomainpictures.net%2Fen%2Ffree-download.php%3Fimage%3Dsun%26id%3D130961&data=05%7C02%7Cgid.malone%40centre.edu%7Ceb369a8d59bc4129ce0508de52e33ef7%7C2d0403c2f6ac4237b4b590a8d2ecf8f2%7C0%7C0%7C639039333131751981%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=sbDNn5AtrbOgMXOdWJkuW3WsJvswooKRXFRpHijU%2BdI%3D&reserved=0 */
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: center;
+    margin-bottom: 20px;
+    padding-bottom: 100px;
+}
+
+#programs > h2::after, #programs > h2{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+}
+
 div.note{
     font-size: 27px;
     font-weight: 600;
@@ -320,6 +435,7 @@ div.note{
 #kids-and-parents div.imgwrapper{
     display: flex;
     flex-direction: row;
+    gap: 70px;
     flex-wrap: wrap;
 }
 #kids-and-parents img{
@@ -327,43 +443,58 @@ div.note{
     height: 266px;
 }
 #kids-and-parents div.imgwrapper div{
-    width: 33%;
+    width: 27%;
     text-align: center;
     line-height: normal;
+    display:flex;
+    flex-direction: row;
+}
+#kids-and-parents div.imgwrapper div div p{
+    padding-left: 140px;
 }
 #kids-and-parents div.imgwrapper div ul{
     list-style: none;
-    font-size: 19px;
     padding-left: 0px;
     list-style-position: inside;
     text-align: center;
 }
 
+
 #kidAdventues div.imgwrapper{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    gap: 70px;
     flex-wrap: wrap;
+    padding-bottom: 40px;
 }
 #kidAdventues img{
     width: 266px;
     height: 266px;
 }
 #kidAdventues div.imgwrapper div{
-    width: 50%;
+    width: 40%;
     text-align: center;
     line-height: normal;
+    display:flex;
+    flex-direction: row;
 }
+#kidAdventues div.imgwrapper div div p{
+    padding-left: 10px;
+}
+
 #kidAdventues div.imgwrapper div ul{
     list-style: none;
-    font-size: 19px;
     padding-left: 0px;
     list-style-position: inside;
     text-align: center;
 }
 
+
 #newParents div.imgwrapper{
     display: flex;
     flex-direction: row;
+    gap: 70px;
     flex-wrap: wrap;
 }
 #newParents img{
@@ -371,21 +502,27 @@ div.note{
     height: 266px;
 }
 #newParents div.imgwrapper div{
-    width: 33%;
+    width: 27%;
     text-align: center;
     line-height: normal;
+    display:flex;
+    flex-direction: row;
+}
+#newParents div.imgwrapper div div p{
+    padding-left: 140px;
 }
 #newParents div.imgwrapper div ul{
     list-style: none;
-    font-size: 19px;
     padding-left: 0px;
     list-style-position: inside;
     text-align: center;
 }
 
+
 #theraphy div.imgwrapper{
     display: flex;
     flex-direction: row;
+    gap: 70px;
     flex-wrap: wrap;
 }
 #theraphy img{
@@ -393,21 +530,27 @@ div.note{
     height: 266px;
 }
 #theraphy div.imgwrapper div{
-    width: 33%;
+    width: 27%;
     text-align: center;
     line-height: normal;
+    display:flex;
+    flex-direction: row;
+}
+#theraphy div.imgwrapper div div p{
+    padding-left: 140px;
 }
 #theraphy div.imgwrapper div ul{
     list-style: none;
-    font-size: 19px;
     padding-left: 0px;
     list-style-position: inside;
     text-align: center;
 }
 
+
 #caregivers div.imgwrapper{
     display: flex;
     flex-direction: row;
+    gap: 70px;
     flex-wrap: wrap;
 }
 #caregivers img{
@@ -415,14 +558,40 @@ div.note{
     height: 266px;
 }
 #caregivers div.imgwrapper div{
-    width: 33%;
+    width: 27%;
     text-align: center;
     line-height: normal;
+    display:flex;
+    flex-direction: row;
+}
+#caregivers div.imgwrapper div div p{
+    padding-left: 140px;
 }
 #caregivers div.imgwrapper div ul{
     list-style: none;
-    font-size: 19px;
     padding-left: 0px;
     list-style-position: inside;
     text-align: center;
 }
+div.note{
+    position: absolute;
+    bottom: -600px;
+    left: 300px;
+    width: 40%;
+    z-index: -1000;
+}
+h1.title::after{
+    content: "";
+    background-image: url(/imgs/heartKidsLogo-Picsart-BackgroundRemover.jpg);
+    position: fixed;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+ #headStartPre p, a{
+    width: 160px;
+} 
