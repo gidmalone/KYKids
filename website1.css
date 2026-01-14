@@ -37,10 +37,7 @@ body{
 h3{
     color: var(--font-color-alt)
 }
-img
-{
-    
-}
+
 header {
     display: flex;
     flex-direction: column-reverse;
